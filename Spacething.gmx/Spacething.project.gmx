@@ -7,13 +7,16 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\SPR_babyship</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\SPR_enemy</sprite>
+    <sprite>sprites\SPR_splode</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\OBJ_babyship</object>
+    <object>objects\OBJ_enemy</object>
+    <object>objects\OBJ_splode</object>
+    <object>objects\OBJ_Spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
