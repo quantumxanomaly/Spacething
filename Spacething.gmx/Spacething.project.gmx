@@ -3,12 +3,35 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles">
+    <datafile>
+      <name>GameNotes.rtf</name>
+      <exists>-1</exists>
+      <size>870</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GameNotes.rtf</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\SPR_babyship</sprite>
     <sprite>sprites\SPR_enemy</sprite>
     <sprite>sprites\SPR_splode</sprite>
+    <sprite>sprites\SPR_slimeShot</sprite>
+    <sprites name="Aftermath">
+      <sprite>sprites\SPR_bigEye</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,9 +40,14 @@
     <object>objects\OBJ_enemy</object>
     <object>objects\OBJ_splode</object>
     <object>objects\OBJ_Spawner</object>
+    <object>objects\OBJ_slimeShot</object>
+    <objects name="Aftermath">
+      <object>objects\OBJ_bigEye</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\RM_aftermath</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
