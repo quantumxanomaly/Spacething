@@ -3,9 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles">
+  <datafiles number="5" name="datafiles">
     <datafile>
-      <name>GameNotes.rtf</name>
+      <name>GameNotes_Brett.rtf</name>
       <exists>-1</exists>
       <size>870</size>
       <exportAction>2</exportAction>
@@ -19,7 +19,41 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>GameNotes.rtf</filename>
+      <filename>GameNotes_Brett.rtf</filename>
+    </datafile>
+    <datafile>
+      <name>GameNotes_Walker.rtf</name>
+      <exists>-1</exists>
+      <size>191</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GameNotes_Walker.rtf</filename>
+    </datafile>
+    <datafile>
+      <name>GameMechanics_Q_A.rtf</name>
+      <exists>-1</exists>
+      <size>446</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GameMechanics_Q_A.rtf</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -31,6 +65,9 @@
     <sprite>sprites\SPR_slimeShot</sprite>
     <sprites name="Aftermath">
       <sprite>sprites\SPR_bigEye</sprite>
+    </sprites>
+    <sprites name="Title_Screen">
+      <sprite>sprites\SRP_start</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -44,8 +81,15 @@
     <objects name="Aftermath">
       <object>objects\OBJ_bigEye</object>
     </objects>
+    <objects name="global_settings">
+      <object>objects\OBJ_globalPlayerSettings</object>
+    </objects>
+    <objects name="Title_Screen">
+      <object>objects\OBJ_start</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\RM_title</room>
     <room>rooms\room0</room>
     <room>rooms\RM_aftermath</room>
   </rooms>
