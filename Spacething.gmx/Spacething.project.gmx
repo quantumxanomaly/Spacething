@@ -69,6 +69,9 @@
     <sprites name="Title_Screen">
       <sprite>sprites\SRP_start</sprite>
     </sprites>
+    <sprites name="testing">
+      <sprite>sprites\SPR_tentacle</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -86,6 +89,9 @@
     </objects>
     <objects name="Title_Screen">
       <object>objects\OBJ_start</object>
+    </objects>
+    <objects name="testing">
+      <object>objects\OBJ_tentacle</object>
     </objects>
   </objects>
   <rooms name="rooms">
