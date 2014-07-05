@@ -51,7 +51,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>RM_title</room>
+            <room>upgrade</room>
           </argument>
         </arguments>
       </action>

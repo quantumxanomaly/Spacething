@@ -89,15 +89,17 @@
     <sprites name="testing">
       <sprite>sprites\SPR_tentacle</sprite>
     </sprites>
+    <sprites name="upgrades">
+      <sprite>sprites\SPR_slimeShotButton</sprite>
+      <sprite>sprites\SPR_tentacleButton</sprite>
+      <sprite>sprites\SPR_equipment</sprite>
+      <sprite>sprites\SPR_selected</sprite>
+      <sprite>sprites\SPR_purchase</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\OBJ_babyship</object>
-    <object>objects\OBJ_enemy</object>
-    <object>objects\OBJ_splode</object>
-    <object>objects\OBJ_Spawner</object>
-    <object>objects\OBJ_slimeShot</object>
     <objects name="Aftermath">
       <object>objects\OBJ_bigEye</object>
     </objects>
@@ -110,12 +112,29 @@
     <objects name="testing">
       <object>objects\OBJ_tentacle</object>
     </objects>
+    <objects name="upgrades">
+      <object>objects\OBJ_slimeShotButton</object>
+      <object>objects\OBJ_tentacleButton</object>
+      <object>objects\OBJ_score</object>
+      <object>objects\OBJ_playGame</object>
+      <object>objects\OBJ_primaryEquip</object>
+      <object>objects\OBJ_selected</object>
+      <object>objects\OBJ_purchase</object>
+    </objects>
+    <objects name="room_0">
+      <object>objects\OBJ_babyship</object>
+      <object>objects\OBJ_enemy</object>
+      <object>objects\OBJ_splode</object>
+      <object>objects\OBJ_Spawner</object>
+      <object>objects\OBJ_slimeShot</object>
+      <object>objects\OBJ_room0Timer</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\RM_title</room>
+    <room>rooms\upgrade</room>
     <room>rooms\room0</room>
     <room>rooms\RM_aftermath</room>
-    <room>rooms\upgrade</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

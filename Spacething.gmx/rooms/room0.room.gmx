@@ -54,6 +54,7 @@
     <instance objName="OBJ_babyship" x="320" y="384" name="inst_BDDCBE51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_Spawner" x="64" y="32" name="inst_C74BD0AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_globalPlayerSettings" x="608" y="0" name="inst_FD92BD79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_room0Timer" x="288" y="0" name="inst_D7D8DF37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
