@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="5" name="datafiles">
+  <datafiles number="6" name="datafiles">
     <datafile>
       <name>GameNotes_Brett.rtf</name>
       <exists>-1</exists>
@@ -55,6 +55,23 @@
       </ConfigOptions>
       <filename>GameMechanics_Q_A.rtf</filename>
     </datafile>
+    <datafile>
+      <name>ListOfVariablesi.rtf</name>
+      <exists>-1</exists>
+      <size>191</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>ListOfVariablesi.rtf</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
@@ -98,6 +115,7 @@
     <room>rooms\RM_title</room>
     <room>rooms\room0</room>
     <room>rooms\RM_aftermath</room>
+    <room>rooms\upgrade</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
