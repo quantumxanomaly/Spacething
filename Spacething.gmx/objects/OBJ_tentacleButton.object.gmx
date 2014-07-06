@@ -59,6 +59,7 @@ equipable = 0
             score -= 500
             image_index = 1
             equipable = 1
+            tentacle = 1
             }
         }
     }

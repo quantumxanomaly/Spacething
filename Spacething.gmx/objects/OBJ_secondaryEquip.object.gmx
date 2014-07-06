@@ -51,7 +51,7 @@ equipping = 0
             <kind>1</kind>
             <string>if OBJ_purchase.buying = 0
     {
-        if equipping = 0 &amp;&amp; OBJ_secondaryEquip.equipping = 0
+        if equipping = 0 &amp;&amp; OBJ_primaryEquip.equipping = 0
         {
         equipping = 1
         with (instance_create(x, y, OBJ_selected))    {    image_speed = 0.5;    } 
@@ -59,7 +59,7 @@ equipping = 0
         else
         {
         equipping = 0 
-        OBJ_secondaryEquip.equipping = 0
+        OBJ_primaryEquip.equipping = 0
         with OBJ_selected { instance_destroy () }
         }
     }

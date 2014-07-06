@@ -30,6 +30,9 @@ moveSpeed = 4;
 
 globalvar slimeShot;
 slimeShot = 0;
+
+globalvar tentacle;
+tentacle = 0
 </string>
           </argument>
         </arguments>
