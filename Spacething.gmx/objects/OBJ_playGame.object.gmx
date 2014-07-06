@@ -48,7 +48,7 @@ moveSpeed = 4;
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>room0</room>
+            <room>RM_room0</room>
           </argument>
         </arguments>
       </action>
