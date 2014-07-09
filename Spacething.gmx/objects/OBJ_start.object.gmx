@@ -76,7 +76,7 @@ global.weapon[1] = 0
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>100</string>
+            <string>600</string>
           </argument>
         </arguments>
       </action>

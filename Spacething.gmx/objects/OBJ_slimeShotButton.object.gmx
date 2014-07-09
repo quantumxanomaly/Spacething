@@ -95,6 +95,8 @@ if slimeShot = 1
     with OBJ_primaryEquip {image_index = 1}
     with OBJ_selected {instance_destroy()}
     global.weapon[0] = OBJ_slimeShot;
+    OBJ_primaryEquip.primarySelected = 0
+    OBJ_primaryEquip.equipping = 0
     }
 
 if equipable = 1 &amp;&amp; OBJ_secondaryEquip.secondarySelected = 1 &amp;&amp; (OBJ_purchase.buying = 0)
@@ -102,6 +104,8 @@ if equipable = 1 &amp;&amp; OBJ_secondaryEquip.secondarySelected = 1 &amp;&amp; 
     with OBJ_secondaryEquip {image_index = 1}
     with OBJ_selected {instance_destroy()}
     global.weapon[1] = OBJ_slimeShot;
+    OBJ_secondaryEquip.secondarySelected = 0
+    OBJ_secondaryEquip.equipping = 0
     }
 </string>
           </argument>

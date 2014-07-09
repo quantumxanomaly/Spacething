@@ -88,7 +88,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if x &gt; OBJ_babyship.x
+            <string>/*
+if x &gt; OBJ_babyship.x
     {
     x = OBJ_babyship.x
     }
@@ -103,6 +104,43 @@ if x &lt; OBJ_babyship.x
 if y &lt; OBJ_babyship.y
     {
     y = OBJ_babyship.y
+    }
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if x &gt; OBJ_guntester.x
+    {
+    x = OBJ_guntester.x
+    }
+if y &gt; OBJ_guntester.y
+    {
+    y = OBJ_guntester.y
+    }
+if x &lt; OBJ_guntester.x
+    {
+    x = OBJ_guntester.x
+    }
+if y &lt; OBJ_guntester.y
+    {
+    y = OBJ_guntester.y
     }
 </string>
           </argument>
