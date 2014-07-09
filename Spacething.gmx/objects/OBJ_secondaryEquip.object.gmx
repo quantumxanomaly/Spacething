@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selected = 0
+            <string>secondarySelected = 0
 equipping = 0
+image_index = 0
+image_speed = 0
 </string>
           </argument>
         </arguments>
@@ -54,11 +56,13 @@ equipping = 0
         if equipping = 0 &amp;&amp; OBJ_primaryEquip.equipping = 0
         {
         equipping = 1
+        secondarySelected = 1
         with (instance_create(x, y, OBJ_selected))    {    image_speed = 0.5;    } 
         }
         else
         {
         equipping = 0 
+        secondarySelected = 0
         OBJ_primaryEquip.equipping = 0
         with OBJ_selected { instance_destroy () }
         }

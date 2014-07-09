@@ -146,6 +146,7 @@
       </objects>
       <objects name="player_ships">
         <object>objects\OBJ_babyship</object>
+        <object>objects\OBJ_guntester</object>
       </objects>
       <object>objects\OBJ_playerSpawner</object>
     </objects>

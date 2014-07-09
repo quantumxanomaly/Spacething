@@ -33,6 +33,15 @@ slimeShot = 0;
 
 globalvar tentacle;
 tentacle = 0
+
+globalvar q;
+q = 0
+
+globalvar w;
+w = 0
+
+global.weapon[0] = 0
+global.weapon[1] = 0
 </string>
           </argument>
         </arguments>
