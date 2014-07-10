@@ -30,11 +30,11 @@ equipping = 0
 image_index = 0
 image_speed = 0
 
-if global.weapon[0] = OBJ_slimeShot
+if global.weapon[1] = OBJ_slimeShot
     {
     image_index = 1
     }
-if global.weapon[0] = OBJ_tentacle
+if global.weapon[1] = OBJ_tentacle
     {
     image_index = 2
     }
