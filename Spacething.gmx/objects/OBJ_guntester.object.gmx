@@ -28,9 +28,10 @@
             <string>window_set_cursor(cr_none)
 draw_sprite(SPR_babyship,0,x,y)
 image_speed = 0
-shotCoolDown = 0
-ctrlCoolDown = 0
 
+autofire = 0
+qshotCoolDown = 0
+wshotCoolDown = 0
 </string>
           </argument>
         </arguments>
@@ -53,7 +54,8 @@ ctrlCoolDown = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check (vk_nokey)
+            <string>/// keyboard and base animation
+if keyboard_check (vk_nokey)
     {
     image_index = 0
     }
@@ -106,9 +108,10 @@ if keyboard_check (vk_up)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if shotCoolDown &gt; 0
+            <string>///Q Shot Cooldown
+if qshotCoolDown &gt; 0
     {
-    shotCoolDown -= 1
+    qshotCoolDown -= 1
     }
 </string>
           </argument>
@@ -130,9 +133,10 @@ if keyboard_check (vk_up)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if ctrlCoolDown &gt; 0
+            <string>///W Shot Cooldown
+if wshotCoolDown &gt; 0
     {
-    ctrlCoolDown -= 1
+    wshotCoolDown -= 1
     }
 </string>
           </argument>
@@ -154,13 +158,40 @@ if keyboard_check (vk_up)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_point (mouse_x, mouse_y) &gt; 5
+            <string>///Mouse Control
+if distance_to_point (mouse_x, mouse_y) &gt; 5
     {
     move_towards_point(mouse_x,mouse_y,4)
     }
 else
     {
     speed = 0
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///autofire control
+if qshotCoolDown == 0 &amp;&amp; autofire = 1
+    {
+    instance_create( x, y-8, global.weapon[0]);
+    qshotCoolDown = 15;
     }
 </string>
           </argument>
@@ -294,37 +325,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if shotCoolDown == 0
+            <string>if wshotCoolDown == 0
     {
     instance_create( x, y-8, global.weapon[1]);
-    shotCoolDown = 15;
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="81">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if shotCoolDown == 0
-    {
-    instance_create( x, y-8, global.weapon[0]);
-    shotCoolDown = 15;
+    wshotCoolDown = 25;
     }
 </string>
           </argument>
@@ -743,7 +747,7 @@ else
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="5" enumb="32">
+    <event eventtype="9" enumb="81">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -760,38 +764,16 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if shotCoolDown == 0
+            <string>if autofire = 0
     {
-    instance_create( x, y-8, OBJ_slimeShot);
-    shotCoolDown = 15;
+    autofire = 1
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="17">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if ctrlCoolDown == 0
+    else
     {
-    instance_create(x, y, OBJ_tentacle);
-    ctrlCoolDown = 50;
+    autofire = 0
     }
+
+
 </string>
           </argument>
         </arguments>

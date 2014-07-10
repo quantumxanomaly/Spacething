@@ -138,6 +138,9 @@
         <object>objects\OBJ_Spawner</object>
         <object>objects\OBJ_room0Timer</object>
       </objects>
+      <objects name="general_level_objects">
+        <object>objects\object20</object>
+      </objects>
     </objects>
     <objects name="Player_objects">
       <objects name="player_weapons">
